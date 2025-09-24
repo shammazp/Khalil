@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p>മാമൻ ഒരായിരം ജന്മദിനാശംസകൾ</p>
+    </header>
+
+    <main>
+        <div class="photo-grid" id="photoGrid">
+            <!-- Photos will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <!-- Modal for image preview -->
+    <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+        <div class="modal-nav">
+            <button class="nav-btn" id="prevBtn">&#8249;</button>
+            <button class="nav-btn" id="nextBtn">&#8250;</button>
+        </div>
+    </div>
+
+    <footer>
+        <p><span class="malayalam-text">ഈ പണി</span> sponsored by</p>
+        <div class="instagram-link">
+            <img src="87390.png" alt="Instagram" class="instagram-icon">
+            <a href="https://instagram.com/younuzbn" target="_blank" class="instagram-text">Younuzbn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
